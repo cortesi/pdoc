@@ -9,6 +9,14 @@ class StaticError(Exception):
     pass
 
 
+def module_relative_path(
+    roots: typing.Sequence[pdoc.doc.Module],
+    src: pdoc.doc.Module,
+    dst: pdoc.doc.Module,
+) -> str:
+    pass
+
+
 def module_to_path(m: pdoc.doc.Module) -> pathlib.Path:
     """
         Calculates the filesystem path for the static output of a given module.
